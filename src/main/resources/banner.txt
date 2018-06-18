@@ -1,10 +1,9 @@
-
-  ${AnsiColor.GREEN}      ██╗${AnsiColor.RED} ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
-  ${AnsiColor.GREEN}      ██║${AnsiColor.RED} ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
-  ${AnsiColor.GREEN}      ██║${AnsiColor.RED} ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
-  ${AnsiColor.GREEN}██╗   ██║${AnsiColor.RED} ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
-  ${AnsiColor.GREEN}╚██████╔╝${AnsiColor.RED} ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
-  ${AnsiColor.GREEN} ╚═════╝ ${AnsiColor.RED} ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
-
-${AnsiColor.BRIGHT_BLUE}:: JHipster 🤓  :: Running Spring Boot ${spring-boot.version} ::
-:: https://www.jhipster.tech ::${AnsiColor.DEFAULT}
+${AnsiColor.CYAN} __          __                 _       __   _                        ______                   _
+${AnsiColor.CYAN} \ \        / /                | |     / _| | |                      |  ____|                 (_)
+${AnsiColor.CYAN}  \ \  /\  / /    ___    _ __  | | __ | |_  | |   ___   __      __   | |__     _ __     __ _   _   _ __     ___
+${AnsiColor.CYAN}   \ \/  \/ /    / _ \  | '__| | |/ / |  _| | |  / _ \  \ \ /\ / /   |  __|   | '_ \   / _` | | | | '_ \   / _ \
+${AnsiColor.CYAN}    \  /\  /    | (_) | | |    |   <  | |   | | | (_) |  \ V  V /    | |____  | | | | | (_| | | | | | | | |  __/
+${AnsiColor.CYAN}     \/  \/      \___/  |_|    |_|\_\ |_|   |_|  \___/    \_/\_/     |______| |_| |_|  \__, | |_| |_| |_|  \___|
+${AnsiColor.CYAN}                                                                                        __/ |
+${AnsiColor.CYAN}                                                                                       |___/
+${AnsiColor.CYAN} WorkflowEngineModule : Running On Spring Boot ${spring-boot.version}
