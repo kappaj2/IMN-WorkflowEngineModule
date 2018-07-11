@@ -9,7 +9,7 @@
     "baseName": "workflowmodule",
     "packageName": "za.co.tman.workflow",
     "packageFolder": "za/co/tman/workflow",
-    "serverPort": "8087",
+    "serverPort": "8097",
     "authenticationType": "jwt",
     "cacheProvider": "hazelcast",
     "enableHibernateCache": true,

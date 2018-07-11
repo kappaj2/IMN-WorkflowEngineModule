@@ -16,5 +16,5 @@ ADD *.war app.war
 
 ENTRYPOINT ["./entrypoint.sh"]
 
-EXPOSE 8087 5701/udp
+EXPOSE 8097 5701/udp
 
