@@ -27,7 +27,7 @@ spring:
         type: simple
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:workflowmodule;DB_CLOSE_DELAY=-1
+        url: jdbc:h2:mem:workflowmodule;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
         name:
         username:
         password:
@@ -165,7 +165,7 @@ pubsubmessagetype:
             pub_sub_message_type: LoggingMessage
             topics_list: LoggingTopic
         -
-            application_module_name: WorkflowModule
+            application_module_name: workflowmodule
             pub_sub_message_type: GenericMessage
             topics_list: GenericTopic
         -

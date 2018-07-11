@@ -1,16 +1,52 @@
 package za.co.tman.workflow.service.messaging;
 
 import java.time.Instant;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Data;
 import za.co.tman.workflow.enums.EventType;
 import za.co.tman.workflow.enums.IncidentPriority;
 import za.co.tman.workflow.enums.PubSubMessageType;
 
 
-@Data
-public class InterModulePubSubMessage implements InterModuleMessage {
+public class InterModulePubSubMessage {
+    
+    /**
+     * Headers as received from the MessageHandler.
+     */
+    private Map<String, String> messageHeaders = new HashMap<>();
+    
+    public Map<String, String> getMessageHeaders() {
+        return messageHeaders;
+    }
+    
+    public void setMessageHeaders(Map<String, String> messageHeaders) {
+        this.messageHeaders = messageHeaders;
+    }
+    
+    /**
+     * Payload variable for payloads for String value only.
+     */
+    private String payload;
+    
+    public String getPayload() {
+        return payload;
+    }
+    
+    public void setPayload(String payload) {
+        this.payload = payload;
+    }
+    
+    private String messageId;
+    
+    public String getMessageId() {
+        return messageId;
+    }
+    
+    public void setMessageId(String messageId) {
+        this.messageId = messageId;
+    }
     
     /**
      * Determine the Inter module message type.
@@ -25,7 +61,7 @@ public class InterModulePubSubMessage implements InterModuleMessage {
     /**
      * The timestamp of when the message was created.
      */
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX", timezone = "UTC")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSXXX", timezone = "UTC")
     private Instant messageDateCreated;
     
     /**
@@ -129,4 +165,5 @@ public class InterModulePubSubMessage implements InterModuleMessage {
     public void setOriginatingApplicationModuleName(String originatingApplicationModuleName) {
         this.originatingApplicationModuleName = originatingApplicationModuleName;
     }
+
 }
