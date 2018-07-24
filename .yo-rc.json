@@ -4,7 +4,7 @@
       "packageName": "za.co.tman.workflow",
       "nativeLanguage": "en"
     },
-    "jhipsterVersion": "5.0.0-beta.2",
+    "jhipsterVersion": "5.1.0",
     "applicationType": "microservice",
     "baseName": "workflowmodule",
     "packageName": "za.co.tman.workflow",
